@@ -120,10 +120,10 @@ footer i {
 
 @media (max-width: 600px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .country-picture {
-    height: 90vh;
+    height: 50vh;
   }
 }
