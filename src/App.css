@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: azure;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header-container {
+  /* height         : 10%; */
+  display        : flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items    : center;
+  background     : linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width     : 150px;
+  text-align: centere;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-container {
+  width             : 80%;
+  margin            : 50px auto;
+  /* border         : 1px solid red; */
+  display           : flex;
+  align-items       : center;
+  justify-content   : center;
+
+
+}
+
+
+.country-picture {
+  width        : 125px;
+  height       : 180px;
+  object-fit   : cover;
+  border-radius: 5px;
+}
+
+.other-details {
+  margin-left   : 10px;
+  /* border     : 1px solid red; */
+  padding       : 20px;
+}
+
+.location-dot {
+  color: red;
+}
+
+.country-name {
+  color       : black;
+  font-weight : 300;
+  margin-left : 5px;
+  margin-right: 10px;
+}
+
+.link-to-maps {
+  color    : #918E9B;
+  font-size: small;
+}
+
+.title-of-place {
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-bottom: 5px;
+  font-weight  : 500;
+}
+
+.description-of-place {
+  font-weight: 300;
+  font-size  : medium;
+}
+
+
+
+footer {
+  background-color: #161619;
+  padding         : 50px;
+  text-align      : center;
+}
+
+
+footer i {
+  width: 50px;
+
+  font-size   : 2rem;
+  cursor      : pointer;
+  margin-right: 70px;
+
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-square-facebook {
+  color: #4267B2;
+}
+
+.fa-square-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: #405DE6
+}
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .country-picture {
+    height: 90vh;
   }
 }
